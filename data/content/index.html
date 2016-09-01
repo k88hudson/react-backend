@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Loading...</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const rootElement = document.getElementById("root");
+      const html = localStorage.getItem("html");
+      rootElement.innerHTML = html;
+      console.log(window.performance.now());
+    </script>
+    <script src="main.bundle.js"></script>
+  </body>
+</html>
